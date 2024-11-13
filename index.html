@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strawhat Pirates Fan Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #8d1c0d;
+            color: #c5c597;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        header {
+            text-align: center;
+            background-color: #202b3c;
+            padding: 20px;
+            color: #ffffff;
+        }
+        .container {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+        }
+        #sidebar {
+            width: 300px;
+            background-color: #2b3e52;
+            padding: 20px;
+            color: #f0e8c5;
+            overflow-y: auto;
+            box-sizing: border-box;
+        }
+        #content {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            box-sizing: border-box;
+        }
+        .member-card {
+            background-color: #3c4f63;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+        }
+        .member-card img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .member-card h3 {
+            color: #fdd835;
+            margin: 0;
+        }
+        .member-info {
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+        .section-title {
+            font-size: 1.5em;
+            color: #fffefc;
+            margin-bottom: 15px;
+        }
+        .arc-section {
+            background-color: #3c4f63;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+        .arc-section h3 {
+            color: #fdd835;
+        }
+        .island-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .island-item {
+            padding: 5px 0;
+            border-bottom: 1px solid #3a4e6a;
+        }
+        .island-item:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Strawhat Pirates Fan Page</h1>
+    <p>Explore the Adventures Across the Grand Line!</p>
+</header>
+
+<div class="container">
+    <aside id="sidebar">
+        <h2>Meet the Crew</h2>
+        <!-- Crew Members -->
+        <div class="member-card">
+            <img src="https://example.com/luffy.jpg" alt="Monkey D. Luffy">
+            <div>
+                <h3>Monkey D. Luffy</h3>
+                <div class="member-info">
+                    <p><strong>Origin:</strong> Foosha Village, East Blue</p>
+                    <p><strong>Joined:</strong> Chapter 1 - Romance Dawn</p>
+                    <p><strong>Dream:</strong> To become the Pirate King</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="member-card">
+            <img src="https://example.com/zoro.jpg" alt="Roronoa Zoro">
+            <div>
+                <h3>Roronoa Zoro</h3>
+                <div class="member-info">
+                    <p><strong>Origin:</strong> Shimotsuki Village, East Blue</p>
+                    <p><strong>Joined:</strong> Chapter 3 - Romance Dawn</p>
+                    <p><strong>Dream:</strong> To be the world's greatest swordsman</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="member-card">
+            <img src="https://example.com/nami.jpg" alt="Nami">
+            <div>
+                <h3>Nami</h3>
+                <div class="member-info">
+                    <p><strong>Origin:</strong> Cocoyasi Village, East Blue</p>
+                    <p><strong>Joined:</strong> Chapter 8 - Orange Town</p>
+                    <p><strong>Dream:</strong> To map the entire world</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="member-card">
+            <img src="https://example.com/usopp.jpg" alt="Usopp">
+            <div>
+                <h3>Usopp</h3>
+                <div class="member-info">
+                    <p><strong>Origin:</strong> Syrup Village, East Blue</p>
+                    <p><strong>Joined:</strong> Chapter 23 - Syrup Village</p>
+                    <p><strong>Dream:</strong> To become a brave warrior of the sea</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="member-card">
+            <img src="https://example.com/sanji.jpg" alt="Sanji">
+            <div>
+                <h3>Sanji</h3>
+                <div class="member-info">
+                    <p><strong>Origin:</strong> North Blue (raised in East Blue on the Baratie)</p>
+                    <p><strong>Joined:</strong> Chapter 43 - Baratie</p>
+                    <p><strong>Dream:</strong> To find the All Blue, the legendary sea</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="member-card">
+            <img src="https://example.com/chopper.jpg" alt="Tony Tony Chopper">
+            <div>
+                <h3>Tony Tony Chopper</h3>
+                <div class="member-info">
+                    <p><strong>Origin:</strong> Drum Island, Grand Line</p>
+                    <p><strong>Joined:</strong> Chapter 134 - Drum Island</p>
+                    <p><strong>Dream:</strong> To become a doctor who can cure any disease</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="member-card">
+            <img src="https://example.com/robin.jpg" alt="Nico Robin">
+            <div>
+                <h3>Nico Robin</h3>
+                <div class="member-info">
+                    <p><strong>Origin:</strong> Ohara, West Blue</p>
+                    <p><strong>Joined:</strong> Chapter 218 - Alabasta</p>
+                    <p><strong>Dream:</strong> To discover the true history of the world by finding the Rio Poneglyph</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="member-card">
+            <img src="https://example.com/franky.jpg" alt="Franky">
+            <div>
+                <h3>Franky</h3>
+                <div class="member-info">
+                    <p><strong>Origin:</strong> South Blue (grew up in Water 7)</p>
+                    <p><strong>Joined:</strong> Chapter 437 - Water 7</p>
+                    <p><strong>Dream:</strong> To build a ship that will sail around the world</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="member-card">
+            <img src="https://example.com/brook.jpg" alt="Brook">
+            <div>
+                <h3>Brook</h3>
+                <div class="member-info">
+                    <p><strong>Origin:</strong> West Blue</p>
+                    <p><strong>Joined:</strong> Chapter 489 - Thriller Bark</p>
+                    <p><strong>Dream:</strong> To reunite with his old friend Laboon, the whale</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="member-card">
+            <img src="https://example.com/jinbe.jpg" alt="Jinbe">
+            <div>
+                <h3>Jinbe</h3>
+                <div class="member-info">
+                    <p><strong>Origin:</strong> Fish-Man Island, Grand Line</p>
+                    <p><strong>Joined:</strong> Chapter 863 - Whole Cake Island</p>
+                    <p><strong>Dream:</strong> To achieve peace between Fish-Men and humans</p>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <main id="content">
+        <h2 class="section-title">Guide to Islands Visited</h2>
+        <div id="island-guide"></div>
+    </main>
+</div>
+
+<script>
+    // Data for islands visited by Luffy, organized by arcs
+    const arcs = [
+        { name: "East Blue Saga", islands: ["Dawn Island", "Shells Town", "Orange Town", "Syrup Village", "Baratie", "Arlong Park", "Loguetown"] },
+        { name: "Alabasta Saga", islands: ["Reverse Mountain", "Whiskey Peak", "Little Garden", "Drum Island", "Alabasta"] },
+        { name: "Sky Island Saga", islands: ["Jaya", "Skypiea"] },
+        { name: "Water 7 Saga", islands: ["Long Ring Long Land", "Water 7", "Enies Lobby", "Post-Enies Lobby"] },
+        { name: "Thriller Bark Saga", islands: ["Thriller Bark"] },
+        { name: "Summit War Saga", islands: ["Sabaody Archipelago", "Amazon Lily", "Impel Down", "Marineford"] },
+        { name: "Fish-Man Island Saga", islands: ["Sabaody Archipelago (Revisited)", "Fish-Man Island"] },
+        { name: "Dressrosa Saga", islands: ["Punk Hazard", "Dressrosa"] },
+        { name: "Four Emperors Saga", islands: ["Zou", "Whole Cake Island", "Wano Country"] }
+    ];
+
+    function displayIslands() {
+        const islandGuide = document.getElementById("island-guide");
+
+        arcs.forEach(arc => {
+            const arcSection = document.createElement("div");
+            arcSection.classList.add("arc-section");
+
+            const arcTitle = document.createElement("h3");
+            arcTitle.textContent = arc.name;
+            arcSection.appendChild(arcTitle);
+
+            const islandList = document.createElement("ul");
+            islandList.classList.add("island-list");
+
+            arc.islands.forEach(island => {
+                const islandItem = document.createElement("li");
+                islandItem.classList.add("island-item");
+                islandItem.textContent = island;
+                islandList.appendChild(islandItem);
+            });
+
+            arcSection.appendChild(islandList);
+            islandGuide.appendChild(arcSection);
+        });
+    }
+
+    displayIslands();
+</script>
+
+</body>
+</html>
